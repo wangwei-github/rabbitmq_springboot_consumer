@@ -51,7 +51,7 @@ public class RabbitReceiver {
             key ="${spring.rabbitmq.listener.order.routing-key}" )
     )
     @RabbitHandler
-    public void onOrderMessage(@Payload com.rabbitmq.rabbitmq_springboot_consumer.entity.Order order, Channel channel, @Headers
+    public void onOrderMessage(@Payload  com.entity.rabbitmq.Order order, Channel channel, @Headers
                                Map<String,Object> headers)throws Exception{
         System.err.println("消费端："+order.getName());
         long deliveryTag = (long)headers.get(AmqpHeaders.DELIVERY_TAG);
