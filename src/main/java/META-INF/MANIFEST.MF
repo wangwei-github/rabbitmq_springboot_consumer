@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: com.rabbitmq.rabbitmq_springboot_consumer.RabbitmqSpringbo
+ otConsumerApplication
+
